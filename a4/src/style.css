@@ -1,0 +1,13 @@
+/* define common styles for app */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  @layer base {
+    button {
+      @apply py-0.5 px-2 bg-gray-200
+             border border-gray-600 rounded  
+             active:bg-gray-200 enabled:hover:bg-gray-300
+             disabled:border-gray-400 disabled:text-gray-400;
+    }
+  }
