@@ -1,0 +1,43 @@
+div#quizview {
+    background-color: whitesmoke;
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div#panel {
+    background-color: white;
+    border: 1px solid black;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div#buttons {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+button#reg {
+    background-color: lightgrey;
+    flex: 1;
+}
+
+button#cheat {
+    background-color: lightyellow;
+    flex: 1;
+}
+
+div#questionWrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+div#panel>span {
+    text-align: center;
+    flex: 1;
+}

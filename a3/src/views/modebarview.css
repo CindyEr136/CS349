@@ -1,0 +1,36 @@
+div>button {
+    width: 100px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+div#quizmode {
+    background-color: lightblue;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+div#listmode {
+    background-color: lightgrey;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+div#left {
+    flex: 1;
+    gap: 10px;
+    display: flex;
+}
+
+button#undo {
+    width: 60px;
+}
+
+button:disabled {
+    border: 1px solid gray;
+}

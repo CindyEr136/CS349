@@ -1,0 +1,20 @@
+/* define common styles for app */
+
+/* simple reset */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* use alternative box model */
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/* global style */
+* {
+  font-family: Arial, sans-serif;
+  font-size: 12pt;
+}
+

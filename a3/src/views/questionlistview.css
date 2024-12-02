@@ -1,0 +1,7 @@
+div#questionlist {
+    border-top: 1px solid black;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

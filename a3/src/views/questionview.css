@@ -1,0 +1,15 @@
+div#question {
+    background-color: lightblue;
+    align-items: center;
+    display: flex;
+}
+
+div#question>span {
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+    padding-right: 8px;
+}
+
+div#question>input {
+    margin: 8px;
+}

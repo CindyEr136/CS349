@@ -1,0 +1,11 @@
+div#statusbar {
+    background-color: lightgray;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+span#cheatlabel {
+    flex: 1;
+    text-align: right;
+}
