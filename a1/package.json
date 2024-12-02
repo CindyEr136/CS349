@@ -1,5 +1,5 @@
 {
-  "name": "a1",
+  "name": "aim-game",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "typescript": "~5.6.2",
-    "vite": "^6.0.1"
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "simplekit": "^0.5.0"
   }
 }
