@@ -25,7 +25,7 @@ export const bounce: EasingFunction = (t, x = 1.5) =>
 //#endregion
 
 // basic animation object
-class Animator {
+export class Animator {
   constructor(
     public startValue: number,
     public endValue: number,
@@ -66,46 +66,5 @@ class Animator {
       this.startTime = undefined;
       this._isRunning = false;
     }
-  }
-}
-
-export class CircleAnimator extends Animator{
-  private radius: number;
-  private angle: number;
-  private centerX: number;
-  private centerY: number;
-
-  constructor(
-    centerX: number,
-    centerY: number,
-    radius: number,
-    public duration: number,
-    public updatePosition: (x: number, y: number) => void,
-    easing: EasingFunction = (t) => t
-  ) {
-    super(0, 2 * Math.PI, duration, (a) => this.updateCircularPosition(a), easing);
-    this.radius = radius;
-    this.angle = 0;
-    this.centerX = centerX;
-    this.centerY = centerY;
-  }
-
-  update(time: number) {
-    if (!this.isRunning || this.startTime === undefined) return;
-
-    const t = Math.min(1, (time - this.startTime) / this.duration);
-    this.angle = this.easing(t) * 2 * Math.PI;
-
-    this.updateCircularPosition(this.angle);
-
-    if (t === 1) {
-      this._isRunning = false;
-    }
-  }
-
-  private updateCircularPosition(angle: number) {
-    const x = this.centerX + this.radius * Math.cos(angle);
-    const y = this.centerY + this.radius * Math.sin(angle);
-    this.updatePosition(x, y);
   }
 }
